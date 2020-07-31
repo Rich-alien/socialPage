@@ -1,0 +1,14 @@
+.post{
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+.text{
+    padding-right: 10px;
+}

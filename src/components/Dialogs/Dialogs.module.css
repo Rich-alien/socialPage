@@ -1,0 +1,42 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 350px 2fr;
+    height: 100%;
+
+}
+.containerMsg{
+    display: flex;
+
+}
+.input{
+    width: 100%;
+}
+.dialogsItems {
+    padding: 10px;
+    border-right: 1px solid black;
+    height: auto;
+}
+
+.active {
+    color: red;
+    padding: 0;
+    height: auto;
+}
+
+.messages {
+    padding: 10px;
+
+}
+
+.message {
+
+}
+
+.dialog {
+
+}
+
+.color {
+    text-decoration: none;
+    color: white;
+}

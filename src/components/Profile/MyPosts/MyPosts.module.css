@@ -1,0 +1,13 @@
+.postsBlock {
+    padding: 10px;
+}
+
+.addComment {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.HeaderText{
+    text-align: center;
+}
