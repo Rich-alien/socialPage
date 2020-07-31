@@ -1,60 +1,19 @@
 import React from "react";
 import style from "./Users.module.css"
-
 import * as axios from "axios";
 
 
 const Users = (props) => {
+    let getUsers = ()=>{
     if (props.users.length === 0) {
         axios.get("https://social-network.samuraijs.com/api/1.0/users").then(response => {
             props.setUsers(response.data.items)
         });
-        // props.setUsers(
-        //     [
-        //         {
-        //             id: 1,
-        //             photoUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Dmitry_Nagiev_2017_3.jpg',
-        //             followed: false,
-        //             name: 'Dmitry K.',
-        //             location: {country: 'Belarus', city: 'Minsk'},
-        //             status: 'I am so pretty'
-        //         },
-        //         {
-        //             id: 2,
-        //             photoUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Dmitry_Nagiev_2017_3.jpg',
-        //             followed: true,
-        //             name: 'Dmitry Z.',
-        //             location: {country: 'Belarus', city: 'Minsk'},
-        //             status: 'I am so pretty'
-        //         },
-        //         {
-        //             id: 3,
-        //             photoUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Dmitry_Nagiev_2017_3.jpg',
-        //             followed: false,
-        //             name: 'Dmitry A.',
-        //             location: {country: 'Belarus', city: 'Minsk'},
-        //             status: 'I am so pretty'
-        //         },
-        //         {
-        //             id: 4,
-        //             photoUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Dmitry_Nagiev_2017_3.jpg',
-        //             followed: false,
-        //             name: 'Dmitry V.',
-        //             location: {country: 'Belarus', city: 'Minsk'},
-        //             status: 'I am so pretty'
-        //         },
-        //         {
-        //             id: 5,
-        //             photoUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1c/Dmitry_Nagiev_2017_3.jpg',
-        //             followed: false,
-        //             name: 'Dmitry N.',
-        //             location: {country: 'Belarus', city: 'Minsk'},
-        //             status: 'I am so pretty'
-        //         },]
-        // )
+    }
     }
     return (
         <div className={style.container}>
+            <button onClick={getUsers}>GetUSers</button>
             {
                 props.users.map(u => <div key={u.id}>
                     <span>
